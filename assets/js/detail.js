@@ -4,7 +4,7 @@ $(document).ready(() => {
   const category = urlParams.get('category-name');
   const mealId = urlParams.get('meal-id');
 
-	if (!category) {
+	if (!category || !mealId) {
 		window.location.href = './index.html';
 	}
 
