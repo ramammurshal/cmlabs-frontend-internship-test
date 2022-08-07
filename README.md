@@ -6,4 +6,4 @@ This project is build with basic frontend development stuff such as HTML/CSS, jQ
 ## How to run
 - Download the zip or clone this repository.
 - Running from index.html on your localhost server.
-- Or you can visit [Coba](https://github.com).
+- Or you can visit [this link](https://ramammurshal.github.io/cmlabs-frontend-internship-test/).
