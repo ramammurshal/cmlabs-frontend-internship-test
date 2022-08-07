@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  --background--body: #23180d;
+  --background--navbar: #2d2013;
+  --color--primary: #ff9928;
+  --transition: all 0.3s ease;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.text-prime {
+  color: var(--color--primary);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: var(--background--body);
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--background--navbar);
+}
+
+.navbar .container {
+  padding: 10px 0;
+}
+
+@media (max-width: 576px) {
+  .navbar .container {
+    padding: 10px;
+  }
+}
+
+.navbar a.navbar-brand {
+  font-weight: bold;
+  color: var(--color--primary);
+}
+
+.navbar a.navbar-brand:hover {
+  color: var(--color--primary);
+}
+
+.navbar .navbar-collapse a {
+  color: #fff;
+}
+
+.navbar .navbar-collapse a:hover {
+  color: var(--color--primary);
+}
+
+@media (max-width: 992px) {
+  .navbar .navbar-collapse li {
+    margin-top: 15px;
+  }
+}
+/* End Navbar */
+
+/* Breadcumb */
+.breadcrumb .breadcrumb-item a {
+  transition: var(--transition);
+}
+
+.breadcrumb .breadcrumb-item a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.breadcrumb li.active {
+  color: #aaa;
+}
+/* End Breadcumb */
+
+/* List */
+section#list .card-list {
+  padding: 15px;
+}
+
+@media (max-width: 576px) {
+  section#list .card-list {
+    margin-bottom: 20px;
+  }
+}
+
+section#list .card-list a:hover {
+  color: white;
+}
+
+section#list .card-list .card-link i {
+  transition: var(--transition);
+  display: inline-block;
+  transform: translate(0, 3px);
+  font-size: 16px;
+}
+
+section#list .card-list .card-link:hover i {
+  transform: translate(5px, 3px);
+}
+
+section#list img,
+section#list h4 {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 576px) {
+  section#list img,
+  section#list h4 {
+    margin-bottom: 10px;
+  }
+}
+/* End List */
+
+/* Footer */
+footer {
+  background-color: var(--background--navbar);
+  padding: 30px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer i {
+  color: orange;
+}
+
+footer a {
+  transition: var(--transition);
+}
+
+footer a:hover {
+  color: var(--color--primary);
+}
+/* End Footer */
+
+/* Float Btn */
+#float-btn {
+  border: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color--primary);
+  border-radius: 50%;
+  color: #fff;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+#float-btn.show {
+  opacity: 1;
+}
+/* End Float Btn */

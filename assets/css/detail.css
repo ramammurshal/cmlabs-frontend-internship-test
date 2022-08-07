@@ -1,0 +1,19 @@
+section#instructions .instructions-details {
+  font-size: 14px;
+  text-align: justify;
+}
+
+ul {
+  margin: 0 !important;
+}
+
+section#tutorials iframe {
+  width: 100%;
+  height: 550px;
+}
+
+@media (max-width: 768px) {
+  section#tutorials iframe {
+    height: 400px;
+  }
+}
