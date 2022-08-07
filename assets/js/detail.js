@@ -4,6 +4,10 @@ $(document).ready(() => {
   const category = urlParams.get('category-name');
   const mealId = urlParams.get('meal-id');
 
+	if (!category) {
+		window.location.href = './index.html';
+	}
+
   axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`)
 		.then(data => {
 			const mealData = data.data.meals[0];

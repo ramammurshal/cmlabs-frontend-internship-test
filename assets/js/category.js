@@ -2,6 +2,10 @@ $(document).ready(() => {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const category = urlParams.get('category-name');
+
+	if (!category) {
+		window.location.href = './index.html';
+	}
   
   document.title = `AppMeal | ${category}`;
   $('#category-bc').text(category);
